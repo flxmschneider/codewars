@@ -24,6 +24,5 @@ class TestUM(unittest.TestCase):
     def test_6(self):
         self.assertEqual(validBraces('())({}}{()][]['), False)
 
-     
 if __name__ == '__main__':
     unittest.main()
