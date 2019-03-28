@@ -1,4 +1,3 @@
-
 def increment_string(string):
     number = ''
     for el in string:
@@ -18,5 +17,3 @@ def increment_string(string):
         sub_string += number
         string = sub_string
     return string
-            
-            

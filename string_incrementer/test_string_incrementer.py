@@ -12,6 +12,5 @@ class Test(unittest.TestCase):
     def test_2(self):
         self.assertEqual(increment_string('foo01'),'foo02')
 
-
 if __name__ == '__main__':
     unittest.main()
