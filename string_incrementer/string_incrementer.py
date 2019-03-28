@@ -1,13 +1,13 @@
+import re
+
 def increment_string(string):
     number = ''
-    for el in string:
-        try:
-            n = int(el)
-            number += el
-        except:
-            continue
-    if number == '':
-        string += '1'
+    numbers = re.findall(r'\d+', string)
+    try:
+        number += str(numbers[-1])
+    except:
+        
+        return string +'1'
     else:
         sub_string = string[0:-len(number)]
         len_number = len(number)
